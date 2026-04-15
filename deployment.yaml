@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mavenkube-webapp
+  name: mavenkube-Deployment
   labels:
     app: mavenkube
 spec:
@@ -15,7 +15,7 @@ spec:
         app: mavenkube
     spec:
       containers:
-      - name: web-container
+      - name: mavenkube-container
         image: manojkumar2023/mavenkube:latest # Replace with your DockerHub tag
         ports:
         - containerPort: 80
